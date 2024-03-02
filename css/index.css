@@ -70,11 +70,11 @@ body {
 }
 
 .experience-dash-divider {
-	border-top: 2px dotted navy;
-
+	border-top: 2px dotted var(--border-color);
 	opacity: 1;
 	width: 100%;
 	display: inline-block;
+	background-color: transparent;
 }
 
 .my-circular {
@@ -143,4 +143,16 @@ body {
 	height: 0px;
 	left: 0px;
 	border: 1px solid #FFFFFF;
+}
+
+.exp-main_section{
+	padding-top: 6vh;
+}
+
+.gallery{
+	padding-top: 6vh;
+}
+
+footer{
+	padding-top: 6vh;
 }
