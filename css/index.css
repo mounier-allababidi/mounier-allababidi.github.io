@@ -156,3 +156,8 @@ body {
 footer{
 	padding-top: 6vh;
 }
+
+.gallery-video{
+	border: 1px solid white;
+	margin: 10px;
+}
