@@ -145,19 +145,33 @@ body {
 	border: 1px solid #FFFFFF;
 }
 
-.exp-main_section{
+.exp-main_section {
 	padding-top: 6vh;
 }
 
-.gallery{
+.gallery {
 	padding-top: 6vh;
 }
 
-footer{
+footer {
 	padding-top: 6vh;
 }
 
-.gallery-video{
+.gallery-video {
 	/* border: 1px solid white; */
 	margin: 10px;
+}
+
+.fullpage {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-color: #000000ad;
 }

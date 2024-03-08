@@ -12,6 +12,15 @@
 
 <body>
 	<div class="container-fluid">
+		<div id="fullpage" class="fullpage" onclick="this.style.display='none';">
+			<div style="
+			display: flex;
+			right: 12px;
+			position: absolute;
+			font-size: 7vw;
+			cursor: pointer;
+		">x</div>
+		</div>
 		<!-- Navbar header -->
 		<div>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
@@ -163,7 +172,7 @@
 						</span>
 					</div>
 					<div class="row d-none d-lg-block">
-						<div class="row g-0 exp_gallery">
+						<div class="row g-0 exp_gallery gallery">
 							<div class="col-3">
 								<img src="images/exp/exp_1.jpeg" class="d-block w-100" alt="...">
 							</div>
@@ -177,7 +186,7 @@
 								<img src="images/exp/exp_4.jpeg" class="d-block w-100" alt="...">
 							</div>
 						</div>
-						<div class="row g-0 exp_gallery">
+						<div class="row g-0 exp_gallery gallery">
 							<div class="col-3">
 								<img src="images/exp/exp_5.jpeg" class="d-block w-100" alt="...">
 							</div>
@@ -191,11 +200,11 @@
 								<img src="images/exp/exp_8.jpeg" class="d-block w-100" alt="...">
 							</div>
 						</div>
-						<div class="row g-0 exp_gallery">
+						<!-- <div class="row g-0 exp_gallery">
 							<div class="col-3">
 								<img src="images/exp/exp_9.jpeg" class="d-block w-100" alt="...">
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 				</div>
@@ -252,7 +261,7 @@
 				</div>
 
 				<div class="row d-block d-lg-none">
-					<div class="row g-0 exp_gallery">
+					<div class="row g-0 exp_gallery gallery">
 						<div class="col-3">
 							<img src="images/exp/exp_1.jpeg" class="d-block w-100" alt="...">
 						</div>
@@ -266,7 +275,7 @@
 							<img src="images/exp/exp_4.jpeg" class="d-block w-100" alt="...">
 						</div>
 					</div>
-					<div class="row g-0 exp_gallery">
+					<div class="row g-0 exp_gallery gallery">
 						<div class="col-3">
 							<img src="images/exp/exp_5.jpeg" class="d-block w-100" alt="...">
 						</div>
@@ -280,11 +289,11 @@
 							<img src="images/exp/exp_8.jpeg" class="d-block w-100" alt="...">
 						</div>
 					</div>
-					<div class="row g-0 exp_gallery">
+					<!-- <div class="row g-0 exp_gallery">
 						<div class="col-3">
 							<img src="images/exp/exp_9.jpeg" class="d-block w-100" alt="...">
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -402,7 +411,7 @@
 						</span>
 					</div>
 
-					<div class="row g-0 d-none d-lg-block exp_gallery">
+					<div class="row g-0 d-none d-lg-block exp_gallery gallery">
 						<div class="col-3">
 							<img src="images/exp/exp_13.jpeg" class="d-block w-100" alt="...">
 						</div>
@@ -431,7 +440,7 @@
 					</div>
 				</div>
 
-				<div class="row g-0 d-block d-lg-none exp_gallery">
+				<div class="row g-0 d-block d-lg-none exp_gallery gallery">
 					<div class="col-3">
 						<img src="images/exp/exp_13.jpeg" class="d-block w-100" alt="...">
 					</div>
@@ -453,22 +462,34 @@
 			<div class="row gallery-content">
 				<div class="col-lg-4 col-12">
 					<div class="gallery-video">
-						<video controls width="100%" height="240" id="video_1" playsinline>
+						<iframe width="100%" height="240"
+							src="https://www.youtube.com/embed/AbgRC0Acj-U?si=GCN9aid0QovHccH1"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						<!-- <video controls width="100%" height="240" id="video_1" playsinline>
 							<source src="videos/gallery_1.mp4" type="video/mp4">
 							Your browser does not support the video tag.
-						</video>
+						</video> -->
 					</div>
 				</div>
-				<!-- <div class="col-lg-4 col-12">
+				<div class="col-lg-4 col-12">
+
 					<div class="gallery-video">
-						<video controls width="100%" height="240" id="video_2" playsinline>
-							<source src="videos/gallery_1.mp4" type="video/mp4">
+						<iframe width="100%" height="240"
+							src="https://www.youtube.com/embed/Dp14PYclyQw?si=XK8WpmVlZHuDcQ7V"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
+						</iframe>
+						<!-- <video controls width="100%" height="240" id="video_2" playsinline>
+							<source src="videos/gallery_2.mp4" type="video/mp4">
 							Your browser does not support the video tag.
-						</video>
+						</video> -->
 					</div>
 
 				</div>
-				<div class="col-lg-4 col-12">
+				<!--	<div class="col-lg-4 col-12">
 					<div class="gallery-video">
 						<video controls width="100%" height="240" id="video_3" playsinline>
 							<source src="videos/gallery_1.mp4" type="video/mp4">

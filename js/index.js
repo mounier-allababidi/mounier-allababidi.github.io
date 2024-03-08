@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
-  $('#video_1').on('play', function() {
+  $('#video_1').on('play', function () {
     // Pause videoB if it is playing
     if (!$('#video_2')[0].paused) {
       $('#video_2')[0].pause();
@@ -17,7 +17,7 @@ $(document).ready(function () {
     }
   });
 
-  $('#video_2').on('play', function() {
+  $('#video_2').on('play', function () {
     // Pause videoB if it is playing
     if (!$('#video_3')[0].paused) {
       $('#video_3')[0].pause();
@@ -27,7 +27,7 @@ $(document).ready(function () {
     }
   });
 
-  $('#video_3').on('play', function() {
+  $('#video_3').on('play', function () {
     // Pause videoB if it is playing
     if (!$('#video_2')[0].paused) {
       $('#video_2')[0].pause();
@@ -35,5 +35,16 @@ $(document).ready(function () {
     if (!$('#video_1')[0].paused) {
       $('#video_1')[0].pause();
     }
+  });
+
+
+  const imgs = document.querySelectorAll('.gallery img');
+  const fullPage = document.querySelector('#fullpage');
+
+  imgs.forEach(img => {
+    img.addEventListener('click', function () {
+      fullPage.style.backgroundImage = 'url(' + img.src + ')';
+      fullPage.style.display = 'block';
+    });
   });
 });
